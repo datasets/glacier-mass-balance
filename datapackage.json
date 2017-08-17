@@ -40,17 +40,17 @@
   "title": "Average cumulative mass balance of reference Glaciers worldwide",
   "views": [
     {
-      "id": "graph",
-      "label": "Graph",
+      "name": "graph",
+      "title": "Average mass of measured glacier",
       "resourceName": "glaciers",
-      "state": {
-        "graphType": "lines-and-points",
+      "specType": "simple",
+      "spec": {
+        "type": "lines-and-points",
         "group": "Year",
         "series": [
           "Mean cumulative mass balance"
         ]
-      },
-      "type": "Graph"
+      }
     }
   ]
 }
