@@ -34,7 +34,8 @@
   "sources": [
     {
       "name": "Average cumulative mass balance of reference Glaciers worldwide",
-      "web": "http://www3.epa.gov/climatechange/images/indicator_downloads/glaciers_fig-1.csv"
+      "web": "http://www3.epa.gov/climatechange/images/indicator_downloads/glaciers_fig-1.csv",
+      "title": "Average cumulative mass balance of reference Glaciers worldwide"
     }
   ],
   "title": "Average cumulative mass balance of reference Glaciers worldwide",
