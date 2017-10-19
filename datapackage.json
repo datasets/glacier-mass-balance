@@ -13,9 +13,8 @@
         "fields": [
           {
             "description": "Year of measurement",
-            "format": "any",
             "name": "Year",
-            "type": "date"
+            "type": "year"
           },
           {
             "description": "Average mass of measured glacier",
