@@ -23,6 +23,7 @@ def execute():
     records =records[7:]
     for r in records:
         r[2] = r[2].strip()
+        if r[2] is '': r[2] = '1'
     writer = csv.writer(open(data, 'w'), lineterminator='\n')
     writer.writerow(header)
     writer.writerows(records)
