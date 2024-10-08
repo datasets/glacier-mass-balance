@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 env/
+venv/
 build/
 develop-eggs/
 dist/
@@ -33,6 +34,7 @@ var/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+.DS_Store
 
 # Unit test / coverage reports
 htmlcov/
