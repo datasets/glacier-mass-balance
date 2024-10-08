@@ -1,5 +1,5 @@
 all:
-	python2 scripts/process.py
+	python scripts/process.py
 
 clean:
 	rm data/* archive/*
