@@ -15,9 +15,10 @@ def get_glaciers_data():
     a = soup.find_all('a', href=True)
     glacier_url = ''
     for elem in a:
-        if re.search(r'\bglacier\b', elem['href'], re.IGNORECASE):
+        if 'glacier' in elem['href'] and '.csv' in elem['href']:
             glacier_url = elem['href']
             break
+    print('Glacier URL:', glacier_url)
     if glacier_url == '':
         print('No glacier data found')
         return
@@ -31,7 +32,7 @@ def execute():
     # Step 2: Read the data from the URL and produce the CSV files
     print('Processing data...')
     with requests.Session() as s:
-        download = s.get(source + '/' + glacier_url)
+        download = s.get('https://www.epa.gov' + glacier_url)
         decoded_content = download.content.decode('utf-8')
         cr = csv.reader(decoded_content.splitlines(), delimiter=',')
         my_list = list(cr)
