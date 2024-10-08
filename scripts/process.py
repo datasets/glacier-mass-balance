@@ -1,9 +1,10 @@
+import re
 import csv
 import requests
 
 from bs4 import BeautifulSoup
 
-source = 'https://www.epa.gov/climate-indicators/climate-change-indicators-glaciers'
+source = 'https://www.epa.gov/climate-indicators/climate-change-indicators-glaciers/'
 archive = 'archive/glaciers_fig-1.csv'
 data = 'data/glaciers.csv'
 
@@ -14,8 +15,8 @@ def get_glaciers_data():
     a = soup.find_all('a', href=True)
     glacier_url = ''
     for elem in a:
-        if 'glacier' in elem['href']:
-            glacier_url = 'https://www.epa.gov' + elem['href']
+        if re.search(r'\bglacier\b', elem['href'], re.IGNORECASE):
+            glacier_url = elem['href']
             break
     if glacier_url == '':
         print('No glacier data found')
@@ -30,7 +31,7 @@ def execute():
     # Step 2: Read the data from the URL and produce the CSV files
     print('Processing data...')
     with requests.Session() as s:
-        download = s.get(glacier_url)
+        download = s.get(source + '/' + glacier_url)
         decoded_content = download.content.decode('utf-8')
         cr = csv.reader(decoded_content.splitlines(), delimiter=',')
         my_list = list(cr)
