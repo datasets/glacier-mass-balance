@@ -1,3 +1,5 @@
+<a href="https://datahub.io/core/glacier-mass-balance"><img src="https://badgen.net/badge/icon/View%20on%20datahub.io/orange?icon=https://datahub.io/datahub-cube-badge-icon.svg&label&scale=1.25)" alt="badge" /></a>
+
 Average cumulative mass balance of "reference" Glaciers worldwide from 1945-2014 sourced from [US EPA][datahome] and the [World Glacier Monitoring Service (WGMS)][wgms].
 This is cumulative change in mass balance of a set of "reference" glaciers worldwide beginning in 1945. The values represents the average of all the glaciers that were measured. Negative values indicate a net loss of ice and snow compared with the base year of 1945. For consistency, measurements are in meters of water equivalent, which represent changes in the average thickness of a glacier.
 
