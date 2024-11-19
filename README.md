@@ -10,8 +10,8 @@ This is cumulative change in mass balance of a set of "reference" glaciers world
 
 ### Sources
 
-1. Climate Change Indicators in the United States: https://www.epa.gov/climate-indicators/climate-change-indicators-glaciers
-2. World Glacier Monitoring Service (WGMS): http://wgms.ch/downloads/wgms_2013_gmbb12.pdf
+- Climate Change Indicators in the United States: https://www.epa.gov/climate-indicators/climate-change-indicators-glaciers
+- World Glacier Monitoring Service (WGMS): http://wgms.ch/downloads/wgms_2013_gmbb12.pdf
 
 ### Related publications:
 
