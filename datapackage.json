@@ -32,8 +32,13 @@
             "name": "Number of observations",
             "type": "number"
           }
+        ],
+        "missingValues": [
+          ""
         ]
-      }
+      },
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8"
     }
   ],
   "sources": [
@@ -51,7 +56,7 @@
       "resourceName": "glaciers",
       "specType": "simple",
       "spec": {
-        "type": "lines-and-points",
+        "type": "line",
         "group": "Year",
         "series": [
           "Mean cumulative mass balance"
@@ -59,5 +64,6 @@
       }
     }
   ],
-  "collection": "climate-change"
+  "collection": "climate-change",
+  "profile": "data-package"
 }
